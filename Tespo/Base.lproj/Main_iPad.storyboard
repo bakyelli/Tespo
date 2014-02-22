@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B3116" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="Pfz-eS-1de">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B3116" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="v9l-Bn-uyC">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
+        <!--Catalogue View Controller-->
+        <scene sceneID="lyj-V4-Jd6">
+            <objects>
+                <viewController id="v9l-Bn-uyC" customClass="CatalogueViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2vb-v9-otd"/>
+                        <viewControllerLayoutGuide type="bottom" id="co3-F2-J1m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eUW-2q-02p">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zut-JK-ob4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-499" y="-1286"/>
+        </scene>
         <!--Store List View Controller-->
         <scene sceneID="IhK-ha-6DY">
             <objects>
@@ -52,7 +70,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Pi-DP-Ff2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-144" y="-306"/>
+            <point key="canvasLocation" x="404" y="-1286"/>
         </scene>
         <!--Store Details View Controller-->
         <scene sceneID="p76-xn-0zI">
@@ -123,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XZI-Kw-HAX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="689" y="-306"/>
+            <point key="canvasLocation" x="1237" y="-1286"/>
         </scene>
     </scenes>
     <resources>

@@ -39,5 +39,27 @@
     }];
     
 }
+-(void) getCurrentCatalogueWithCompletion:(void (^) (Catalogue *)) completion;
+{
+    
+    PFQuery *query = [[PFQuery alloc]initWithClassName:@"Catalogues"];
+    [query whereKey:@"isCurrent" equalTo:[NSNumber numberWithBool:YES]];
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if(!error)
+        {
+            
+            if(objects.count > 0){
+                Catalogue *catalogue = [[Catalogue alloc]initWithParseObject:objects[0]];
+                completion(catalogue);
+            }else{
+                completion(nil);
+            }
+            
+        }
+    }];
+    
+}
+
 
 @end

@@ -9,12 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
 #import "Store.h"
+#import "Catalogue.h" 
 
 @interface DataStore : NSObject
 
 + (DataStore *)SharedStore;
 
 -(void) getAllStoresWithCompletion:(void (^) (NSMutableArray *)) completion;
-
+-(void) getCurrentCatalogueWithCompletion:(void (^) (Catalogue *)) completion;
 
 @end

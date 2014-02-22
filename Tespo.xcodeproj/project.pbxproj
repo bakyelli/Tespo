@@ -16,6 +16,9 @@
 		F165CB881883183E005CC779 /* StoreDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F165CB871883183E005CC779 /* StoreDetailsViewController.m */; };
 		F165CB8A18832885005CC779 /* cesme.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F165CB8918832885005CC779 /* cesme.jpg */; };
 		F17DFB171884E27E00A6ED00 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17DFB161884E27E00A6ED00 /* ImageIO.framework */; };
+		F1B462D318B842B900DD20C1 /* Catalogue.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B462D218B842B900DD20C1 /* Catalogue.m */; };
+		F1B462D618B8449800DD20C1 /* CatalogueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B462D518B8449700DD20C1 /* CatalogueViewController.m */; };
+		F1B462D918B8489800DD20C1 /* CataloguePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B462D818B8489800DD20C1 /* CataloguePageViewController.m */; };
 		F1E73EDC1881C2A3000BA02A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E73EDB1881C2A3000BA02A /* Foundation.framework */; };
 		F1E73EDE1881C2A3000BA02A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E73EDD1881C2A3000BA02A /* CoreGraphics.framework */; };
 		F1E73EE01881C2A3000BA02A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E73EDF1881C2A3000BA02A /* UIKit.framework */; };
@@ -68,6 +71,12 @@
 		F165CB871883183E005CC779 /* StoreDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreDetailsViewController.m; sourceTree = "<group>"; };
 		F165CB8918832885005CC779 /* cesme.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cesme.jpg; sourceTree = "<group>"; };
 		F17DFB161884E27E00A6ED00 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		F1B462D118B842B900DD20C1 /* Catalogue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Catalogue.h; sourceTree = "<group>"; };
+		F1B462D218B842B900DD20C1 /* Catalogue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Catalogue.m; sourceTree = "<group>"; };
+		F1B462D418B8449700DD20C1 /* CatalogueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogueViewController.h; sourceTree = "<group>"; };
+		F1B462D518B8449700DD20C1 /* CatalogueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogueViewController.m; sourceTree = "<group>"; };
+		F1B462D718B8489800DD20C1 /* CataloguePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CataloguePageViewController.h; sourceTree = "<group>"; };
+		F1B462D818B8489800DD20C1 /* CataloguePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CataloguePageViewController.m; sourceTree = "<group>"; };
 		F1E73ED81881C2A3000BA02A /* Tespo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tespo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E73EDB1881C2A3000BA02A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F1E73EDD1881C2A3000BA02A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -146,6 +155,8 @@
 				F165CB811882104D005CC779 /* Constants.m */,
 				F13A1BAC1881E634001F7BFE /* DataStore.h */,
 				F13A1BAD1881E634001F7BFE /* DataStore.m */,
+				F1B462D118B842B900DD20C1 /* Catalogue.h */,
+				F1B462D218B842B900DD20C1 /* Catalogue.m */,
 				F13A1BAF1881E675001F7BFE /* Store.h */,
 				F13A1BB01881E675001F7BFE /* Store.m */,
 			);
@@ -164,6 +175,10 @@
 		F165CB85188211DC005CC779 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F1B462D418B8449700DD20C1 /* CatalogueViewController.h */,
+				F1B462D518B8449700DD20C1 /* CatalogueViewController.m */,
+				F1B462D718B8489800DD20C1 /* CataloguePageViewController.h */,
+				F1B462D818B8489800DD20C1 /* CataloguePageViewController.m */,
 				F165CB861883183E005CC779 /* StoreDetailsViewController.h */,
 				F165CB871883183E005CC779 /* StoreDetailsViewController.m */,
 				F1E73F271881E109000BA02A /* StoreListViewController.h */,
@@ -394,12 +409,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F165CB7F1881F0BA005CC779 /* FBMissingSymbols.m in Sources */,
+				F1B462D318B842B900DD20C1 /* Catalogue.m in Sources */,
 				F165CB881883183E005CC779 /* StoreDetailsViewController.m in Sources */,
 				F13A1BAE1881E634001F7BFE /* DataStore.m in Sources */,
 				F1E73F291881E109000BA02A /* StoreListViewController.m in Sources */,
 				F13A1BB11881E675001F7BFE /* Store.m in Sources */,
+				F1B462D918B8489800DD20C1 /* CataloguePageViewController.m in Sources */,
 				F1E73EEC1881C2A3000BA02A /* AppDelegate.m in Sources */,
 				F165CB821882104D005CC779 /* Constants.m in Sources */,
+				F1B462D618B8449800DD20C1 /* CatalogueViewController.m in Sources */,
 				F1E73EE81881C2A3000BA02A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
